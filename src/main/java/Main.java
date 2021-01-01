@@ -9,19 +9,19 @@ public class Main {
         int answer;
         System.out.print("Guess number: ");
         Scanner scanner = new Scanner(System.in);
-        while (!scanner.hasNextInt()){
+        while (!scanner.hasNextInt()) {
             System.out.println("Only digits possible");
             System.out.print("Guess number: ");
             scanner = new Scanner(System.in);
         }
         answer = scanner.nextInt();
 
-        while  (true){
+        while (true) {
             while (answer < 0 || answer > 100) {
                 System.out.println("Number should be: 0 - 100");
                 System.out.print("Guess number: ");
                 scanner = new Scanner(System.in);
-                while (!scanner.hasNextInt()){
+                while (!scanner.hasNextInt()) {
                     System.out.println("Only digits possible");
                     System.out.print("Guess number: ");
                     scanner = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class Main {
                 min = answer;
                 System.out.print("Guess number: ");
                 scanner = new Scanner(System.in);
-                while (!scanner.hasNextInt()){
+                while (!scanner.hasNextInt()) {
                     System.out.println("Only digits possible");
                     System.out.print("Guess number: ");
                     scanner = new Scanner(System.in);
@@ -47,7 +47,7 @@ public class Main {
                 scanner = new Scanner(System.in);
                 answer = scanner.nextInt();
             }
-            if (answer==numberToGuess){
+            if (answer == numberToGuess) {
                 System.out.println("Correct! You guess the number: " + answer);
                 break;
             }
